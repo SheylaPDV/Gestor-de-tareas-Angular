@@ -1,5 +1,5 @@
-<h4>Tus tareas:</h4>
+<h4>Your homework:</h4>
 
 <!-- TODO: Replantear con directiva restructural -->
-<app-task [task]="task1"></app-task>
-<app-task [task]="task2"></app-task>
+<app-task [task]="task1" (delete)="deleteTask($event)"></app-task>
+<app-task [task]="task2" (delete)="deleteTask($event)"></app-task>
